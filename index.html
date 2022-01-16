@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js" defer></script>
+    <script src = "index.js" defer></script>
+    <script src="https://kit.fontawesome.com/a30f38a570.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <input type="text" placeholder="Type a city"/>
+    <div class = "weatherInfo">
+      <div class = "weatherSummary">
+        <i id = "weatherIcon" class="fas fa-cloud"></i>
+        <p id = "weatherDesc"></p>
+      </div>
+        <div class = "date">
+          <p></p>
+        </div>
+        <div class = "city">
+          <h1></h1>
+        </div>
+
+        <p></p>
+        <div class = "weatherStats">
+          <ul class = "tempStats">
+            <li>
+              <p> Current 
+                <span id = "currentTemp"></span>
+              </p>
+            </li>
+            <li>
+              <p> High
+                <span id = "highTemp"></span>
+              </p>
+            </li>
+            <li>
+              <p> Low
+                <span id = "lowTemp"></span>
+              </p>
+            </li>
+          </ul>
+          <ul class = "miscStats">
+            <li>
+              <p> Feels like  
+                <span id = "feelsTemp"></span>
+              </p>
+            </li>
+            <li>
+              <p> <i class="fas fa-wind"></i>
+                <span id = "wind"></span>
+              </p>
+            </li>
+            <li>
+              <p> <i class="fas fa-tint"></i>
+                <span id = "humidity"></span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id = "root"></div>
+  </body>
+</html>

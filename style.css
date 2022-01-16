@@ -1,0 +1,123 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+i{
+    font-size: xx-large;
+}
+
+body{
+    background: linear-gradient(62deg, #EE7752, #ff3131, #1302ff, #fffc37);
+    animation: gradient 15s ease infinite; 
+    background-size: 400% 400%;
+    color: white;
+    background-blend-mode: color-burn;
+}
+
+@-webkit-keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+  }
+
+input { background: rgba(255,255,255,0.4);
+        border: none;
+        position: relative;
+        display: block;
+        outline: none;
+        width: 16rem;
+        height: 2.5rem;
+        top: 16%;
+        margin: 0 auto;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        -webkit-box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+        box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+        background-color: rgb(34, 34, 34);
+        left: 40%;
+}
+
+textarea{
+    background-color: rgb(34, 34, 34);
+}
+
+.weatherInfo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 200%;
+
+}
+
+h1{
+    font-size: 300%;
+}
+
+.weatherSummary{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: center;
+    align-items:center;
+    margin-bottom: -1%;
+}
+
+.weatherSummary > *{
+    margin-left: 3%;
+}
+
+.tempStats{
+    margin-left: 1%;
+}
+
+.tempStats > *{
+    margin-right: 2%;
+}
+
+.date{
+    margin-left: 3%;
+}
+
+.city{
+    margin-left: 3%;
+    margin-top: -2%;
+}
+
+ul{
+    list-style: none;
+}
+
+span{
+    font-size: 200%;
+    margin-left: 2%;
+}
+
+.miscStats{
+    border-left: 5px white solid;
+    margin-left: 1%;
+    width: 5%;
+}
+
+.miscStats > * {
+    margin-right: 2%;
+}
+
+.weatherStats{
+    display: flex;
+    flex-direction: row;
+}
